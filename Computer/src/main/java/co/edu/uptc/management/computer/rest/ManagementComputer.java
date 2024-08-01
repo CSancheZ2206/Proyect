@@ -82,14 +82,26 @@ public static ManagementPersistenceComputer managementPersistenceComputer = new 
 	@Produces({ MediaType.APPLICATION_JSON })
 	@Consumes({ MediaType.APPLICATION_JSON })
 	public ComputerDTO updateComputerAttribute(ComputerDTO computerDTO) {
-		for(ComputerDTO book: managementPersistenceComputer.getListComputerDTO()) {
-			if(book.getReference().equals(computerDTO.getReference())) {
-				if(!Objects.isNull(computerDTO.getReference())) {
-					book.setReference(computerDTO.getReference());
+		for(ComputerDTO computer: managementPersistenceComputer.getListComputerDTO()) {
+			if(computer.getReference().equals(computerDTO.getReference())) {
+				if(!Objects.isNull(computerDTO.getBrand())) {
+					computer.setBrand(computerDTO.getBrand());
 				}
 				
 				if(!Objects.isNull(computerDTO.getModel())) {
-					book.setModel(computerDTO.getModel());
+					computer.setModel(computerDTO.getModel());
+				}
+				
+				if(!Objects.isNull(computerDTO.getOpSystem())) {
+					computer.setOpSystem(computerDTO.getOpSystem());
+				}
+				
+				if(!Objects.isNull(computerDTO.getProcessor())) {
+					computer.setProcessor(computerDTO.getProcessor());
+				}
+				
+				if(!Objects.isNull(computerDTO.getRamMemory())) {
+					computer.setRamMemory(computerDTO.getRamMemory());
 				}
 				
 				managementPersistenceComputer.dumpFilePlain("Computer.txt");
@@ -104,11 +116,11 @@ public static ManagementPersistenceComputer managementPersistenceComputer = new 
 	@Produces({ MediaType.APPLICATION_JSON })
 	@Consumes({ MediaType.APPLICATION_JSON })
 	public ComputerDTO deleteComputer(@QueryParam("referenceComputer") String referenceComputer) {
-		ComputerDTO bookDTO = this.getComputersByReference(referenceComputer);
-		if(bookDTO != null) {
-			managementPersistenceComputer.getListComputerDTO().remove(bookDTO);
+		ComputerDTO computerDTO = this.getComputersByReference(referenceComputer);
+		if(computerDTO != null) {
+			managementPersistenceComputer.getListComputerDTO().remove(computerDTO);
 			managementPersistenceComputer.dumpFilePlain("Computer.txt");
 		}
-		return bookDTO;
+		return computerDTO;
 	}
 }
