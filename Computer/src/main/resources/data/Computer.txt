@@ -1,0 +1,26 @@
+Com17;HP;0006;wd 11;Intel;6Gb
+Com12;HP;0005;wd 11;Intel;12Gb
+Com19;Lenovo;0005;wd 11;Ryzen;8Gb
+Com15;Lenovo;0003;wd 11;Intel;8Gb
+Com20;Asus;0007;wd 10;Intel;16Gb
+Com11;Acer;0002;wd 10;Ryzen;8Gb
+Com6;Asus;0005;wd 11;Intel;8Gb
+Com5;HP;0004;wd 10;Ryzen;12Gb
+Com22;Apple;0002;macOS;M1;16Gb
+Com10;Acer;0001;wd 11;Intel;16Gb
+Com23;Apple;0003;macOS;M2;8Gb
+Com8;Lenovo;0001;wd 11;Intel;4Gb
+Com4;HP;0003;wd 11;Intel;8Gb
+Com1;Asus;0001;wd 11;Intel;6Gb
+Com13;Asus;0006;wd 10;Intel;8Gb
+Com24;Apple;0004;macOS;M2;16Gb
+Com3;Dell;0001;wd 10;Intel;16Gb
+Com14;Dell;0003;wd 11;Ryzen;16Gb
+Com21;Apple;0001;macOS;M1;8Gb
+Com2;Asus;0002;wd 10;Ryzen;8Gb
+Com7;Dell;0002;wd 10;Ryzen;16Gb
+Com25;Apple;0005;macOS;M2;32Gb
+Com9;Lenovo;0002;wd 10;Ryzen;8Gb
+Com16;Acer;0003;wd 10;Ryzen;12Gb
+Com18;Dell;0004;wd 10;Intel;16Gb
+Com7;Dell;0002;wd 10;Ryzen;16Gb
