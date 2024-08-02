@@ -1,52 +1,62 @@
-*{
-    margin: 0; /*Elimina el margen predeterminado para todos los elementos*/ 
-    padding: 0; /*Elimina el relleno predeterminado para todos los elementos*/
+/* Eliminar márgenes y rellenos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluir el padding y el border en el tamaño total del elemento */
 }
 
-.form-login{
+/* Estilo del formulario de inicio de sesión */
+.form-login {
     width: 350px;
-    height: 400px;
-    background-color: blue;
-    padding-top: 20px;
+    padding: 20px;
+    background-color: #d9d9d9; /* Fondo claro */
     margin: 50px auto;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    box-shadow: -10px 20px 15px 10px gray;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centrar texto */
 }
 
-h1{
-    color: black;
-    text-align: center;
-    margin-top: 20px;
+/* Estilo del encabezado */
+h1 {
+    color: #333; /* Texto oscuro */
     margin-bottom: 30px;
+    font-family: 'Arial', sans-serif; /* Fuente sans-serif */
 }
 
-input{ /*Selector de componentes*/
-    font-size: 16px;/*Tamaño de fuente*/
-    padding: 8px;/*Espaciado por todos los sentidos*/
-    display: block;/*Lo referencia como un bloque para hacer q ocupe toda la linea*/
-    margin: 15px auto;/*Centrar el componente con las margenes*/
+/* Estilo de los campos de entrada */
+input[type="text"], input[type="password"] {
+    width: calc(100% - 40px); /* Ancho total menos márgenes */
+    padding: 10px;
+    margin: 15px auto;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
 }
 
+/* Estilo de las etiquetas */
 label {
-    color: white;/*Establece el color de la etiquetas*/
-    display: block;/*Hace de las etiquetas un bloque*/
-    margin: 15px;/*Añade una margen a las etiquetas*/
-    font-size: 20px;/*Establece el tamaño de las fuentes de las etiquetas*/
-    font-weight: bold;
-    text-align: center;
-}
-
-input[type="button"] {
-    width: 100px;
-    margin-top: 20px;
-    font-size: 20px;
+    color: #333; /* Texto oscuro */
     display: block;
-    background-color: gray;/*Color del boton*/
-    cursor: pointer; /*Cambia la forma del cursor*/
+    margin: 15px 0 5px 0;
+    font-size: 18px; /* Tamaño de fuente mayor */
+    font-weight: bold;
 }
 
+/* Estilo del botón */
+input[type="button"] {
+    width: 120px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff; /* Texto blanco */
+    background-color: #007BFF; /* Fondo azul */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+/* Estilo del botón al pasar el ratón por encima */
 input[type="button"]:hover {
-    background-color: aqua;/*Cambia el color del boton cuando se le coloca el cursor encima*/
+    background-color: #0056b3; /* Fondo azul más oscuro */
 }
-

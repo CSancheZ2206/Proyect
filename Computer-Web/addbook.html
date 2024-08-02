@@ -2,49 +2,53 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Add Books</title>
-        <link rel="stylesheet" href="css/style_addbook.css">
-        <link rel="stylesheet" href="css/style_addbook2.css">
-
+        <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/addbook.css">
     </head>
-       <body>
+
+    <body>
         <div class="card add">
             <div class="card-body">
-              <h5 class="card-title centrarTexto">Agregar libro</h5>
-              <div class="form-group">
-                <label for="input1">Código del libro</label>
-                <input type="email" class="form-control" id="input1" aria-describedby="emailHelp">
-              </div>
-              <div class="form-group">
-                <label for="input2">Nombre del libro</label>
-                <input type="email" class="form-control" id="input2" aria-describedby="emailHelp">
-              </div>
-              <div class="form-group">
-                <label for="input3">Autor del libro</label>
-                <input type="email" class="form-control" id="input3" aria-describedby="emailHelp">
-              </div>
-              <div class="form-group">
-                <label for="input4">Género del libro</label>
-                <input type="email" class="form-control" id="input4" aria-describedby="emailHelp">
-              </div>
-              <div class="form-group">
-                <label for="input7">Año de publicación</label>
-                <input type="email" class="form-control" id="input7" aria-describedby="emailHelp">
-              </div>
-              <div class="form-group">
-                <label for="input5">Cantidad de paginas del libro</label>
-                <input type="email" class="form-control" id="input5" aria-describedby="emailHelp">
-              </div>
-              <div class="form-group">
-                <label for="input6">Editorial del libro</label>
-                <input type="email" class="form-control" id="input6" aria-describedby="emailHelp">
-              </div>
-              <button type="submit" class="btn btn-outline-primary">Añadir Libro</button>
+                <h5 class="card-title">Agregar Libro</h5>
+                <div class="form-group mt-3">
+                    <label for="input-code-book">Codigo del Libro</label>
+                    <input type="text" class="form-control" id="input-code-book">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="input-name-book">Nombre del Libro</label>
+                    <input type="text" class="form-control" id="input-name-book">
+               </div> 
+               <div class="form-group mt-3">
+                    <label for="input-author-book">Autor del Libro</label>
+                    <input type="text" class="form-control" id="input-author-book">
+                </div> 
+                <div class="form-group mt-3">
+                    <label for="input-genre-book">Genero del Libro</label>
+                    <input type="text" class="form-control" id="input-genre-book">
+                </div> 
+
+                <div class="form-group mt-3">
+                    <label for="input-year-publish">Año de Publicación</label>
+                    <input type="text" class="form-control" id="input-year-publish">
+                </div> 
+
+                <div class="form-group mt-3">
+                    <label for="input-page-quantity">Cantidad de Páginas</label>
+                    <input type="number" class="form-control" id="input-page-quantity">
+                </div> 
+                <div class="form-group mt-3">
+                    <label for="input-publisher-book">Editorial del Libro</label>
+                    <input type="text" class="form-control" id="input-publisher-book">
+                </div> 
+                <div class="form-group mt-3 ml-4">
+                    <button type="button" class="btn btn-primary" onclick="addBook()"> Agregar</button>
+                </div>
+
             </div>
         </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/addbook.js"></script>
+        <script src="js/addBook.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
 
-</body> 
 </html>
