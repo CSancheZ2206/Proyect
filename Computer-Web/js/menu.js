@@ -37,8 +37,10 @@ function loadComputers() {
 
     const addCard = document.createElement('div');
     addCard.className = 'card';
+
     const addCardBody = document.createElement('div');
     addCardBody.className = 'card-body';
+
     const addButton = document.createElement('a');
     addButton.className = 'btn btn-primary';
     addButton.href = './addcomputer.html';
@@ -49,6 +51,18 @@ function loadComputers() {
     addTitle.textContent = '¡Puedes agregar nuevos computadores!';
     addCardBody.appendChild(addButton);
     addCardBody.appendChild(addTitle);
+
+    const searchButton = document.createElement('a');
+    searchButton.className = 'btn btn-primary';
+    searchButton.href = './search.html';
+    const searchImg = document.createElement('img');
+    searchImg.src = 'resource/icons/Index-Search.png';
+    searchButton.appendChild(searchImg);
+    const searchTitle = document.createElement('h3');
+    searchTitle.textContent = 'Buscar computador';
+    addCardBody.appendChild(searchButton);
+    addCardBody.appendChild(searchTitle);
+
     addCard.appendChild(addCardBody);
     content.appendChild(addCard);
 
@@ -99,7 +113,6 @@ function loadComputers() {
                 btnUpdate.textContent = 'Actualizar';
                 btnUpdate.href = `./updatecomputer.html?reference=${computer.reference}`;
 
-
                 cardBody.appendChild(title);
                 cardBody.appendChild(brand);
                 cardBody.appendChild(model);
@@ -115,6 +128,7 @@ function loadComputers() {
         })
         .catch(error => console.error('Error:', error));
 }
+
 
 function loadSellers() {
     const content = document.getElementById('content');
