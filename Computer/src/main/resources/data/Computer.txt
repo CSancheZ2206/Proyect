@@ -2,7 +2,6 @@ Com17;HP;0006;wd 11;Intel;6Gb
 Com12;HP;0005;wd 11;Intel;12Gb
 Com19;Lenovo;0005;wd 11;Ryzen;8Gb
 Com15;Lenovo;0003;wd 11;Intel;8Gb
-Com20;Asus;0007;wd 10;Intel;16Gb
 Com11;Acer;0002;wd 10;Ryzen;8Gb
 Com6;Asus;0005;wd 11;Intel;8Gb
 Com5;HP;0004;wd 10;Ryzen;12Gb
@@ -24,3 +23,4 @@ Com9;Lenovo;0002;wd 10;Ryzen;8Gb
 Com16;Acer;0003;wd 10;Ryzen;12Gb
 Com18;Dell;0004;wd 10;Intel;16Gb
 Com7;Dell;0002;wd 10;Ryzen;16Gb
+Com20;Asus;0007;wd 10;Intel;16Gb

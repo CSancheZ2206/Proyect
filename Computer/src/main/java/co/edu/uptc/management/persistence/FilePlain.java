@@ -25,7 +25,7 @@ public class FilePlain {
 	public String readFile(String rutaNombre) {
 	    StringBuilder contenido = new StringBuilder();
 	    try {
-	        InputStream inputStream = getClass().getClassLoader().getResourceAsStream(rutaNombre);
+	        InputStream inputStream = getClass().getResourceAsStream(rutaNombre);
 	        if (inputStream == null) {
 	            System.out.println("No encontró el archivo");
 	            return "";
@@ -50,7 +50,7 @@ public class FilePlain {
 	*/
 	public void writeFile(String nombreArchivo, String content) {
 		String rutaAbsoluta = 
-				"C:/Users/User/Desktop/Uptc/Progra 2/Proyect/Computer/src/main/resources/" + nombreArchivo;
+				"C:/Users/User/Desktop/Uptc/Progra 2/Proyect/Computer/src/main/resources/data/" + nombreArchivo;
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaAbsoluta))) {
             writer.write(content);
         } catch (IOException e) {

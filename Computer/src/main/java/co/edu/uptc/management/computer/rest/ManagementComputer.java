@@ -118,6 +118,7 @@ public static ManagementPersistenceComputer managementPersistenceComputer = new 
 	public ComputerDTO deleteComputer(@QueryParam("referenceComputer") String referenceComputer) {
 		ComputerDTO computerDTO = this.getComputersByReference(referenceComputer);
 		if(computerDTO != null) {
+			System.out.print("Hola");
 			managementPersistenceComputer.getListComputerDTO().remove(computerDTO);
 			managementPersistenceComputer.dumpFilePlain("Computer.txt");
 		}
