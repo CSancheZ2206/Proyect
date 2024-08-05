@@ -300,3 +300,5 @@ function clearContent(content) {
         content.removeChild(content.firstChild);
     }
 }
+
+loadComputers();
