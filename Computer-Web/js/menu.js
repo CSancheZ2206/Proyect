@@ -207,7 +207,7 @@ function loadUsers() {
     addCard.appendChild(addCardBody);
     content.appendChild(addCard);
 
-    fetch('http://localhost:8080/Computer/rest/ManagementUser/getUsers')
+    fetch('http://localhost:8080/Computer/rest/ManagementUser/getUser')
         .then(response => response.json())
         .then(data => {
             data.forEach(user => {
@@ -217,37 +217,25 @@ function loadUsers() {
                 const cardBody = document.createElement('div');
                 cardBody.className = 'card-body';
 
-                const name = document.createElement('h2');
-                name.className = 'card-title';
-                name.textContent = user.name;
+                const nameUser = document.createElement('p');
+                nameUser.className = 'card-text';
+                nameUser.textContent = `Usuario: ${user.nameUser}`;
 
-                const email = document.createElement('p');
-                email.className = 'card-text';
-                email.textContent = `Email: ${user.email}`;
-
-                const role = document.createElement('p');
-                role.className = 'card-text';
-                role.textContent = `Rol: ${user.role}`;
+                const password = document.createElement('p');
+                password.className = 'card-text';
+                password.textContent = `Contraseña: ${user.password}`;
 
                 const btnDelete = document.createElement('button');
                 btnDelete.className = 'btn-danger';
                 btnDelete.textContent = 'Eliminar';
-                btnDelete.setAttribute('data-email', user.email);
+                btnDelete.setAttribute('data-nameUser', user.nameUser);
                 btnDelete.addEventListener('click', function () {
-                    deleteUser(this.getAttribute('data-email'));
+                    deleteUser(this.getAttribute('data-nameUser'));
                 });
 
-                const btnUpdate = document.createElement('a');
-                btnUpdate.className = 'btn-success margin-button';
-                btnUpdate.textContent = 'Actualizar';
-                btnUpdate.href = '/updateuser.html';
-                btnUpdate.setAttribute('data-user', JSON.stringify(user));
-
-                cardBody.appendChild(name);
-                cardBody.appendChild(email);
-                cardBody.appendChild(role);
+                cardBody.appendChild(nameUser);
+                cardBody.appendChild(password);
                 cardBody.appendChild(btnDelete);
-                cardBody.appendChild(btnUpdate);
 
                 card.appendChild(cardBody);
                 content.appendChild(card);
@@ -290,8 +278,8 @@ function deleteSeller(name) {
         .catch(error => console.error('Error:', error));
 }
 
-function deleteUser(email) {
-    fetch(`http://localhost:8080/Computer/rest/ManagementUser/deleteUser?email=${email}`, {
+function deleteUser(nameUser) {
+    fetch(`http://localhost:8080/Computer/rest/ManagementUser/deleteUser?nameUser=${nameUser}`, {
         method: 'DELETE'
     })
         .then(response => {

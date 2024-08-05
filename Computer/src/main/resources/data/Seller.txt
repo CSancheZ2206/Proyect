@@ -1,3 +1,2 @@
 Camilo;Asus;Camilo@
 Juan;Dell;Juan@
-Cristina;Hp;Cristian@

@@ -8,7 +8,21 @@ import co.edu.uptc.management.constans.*;
 import co.edu.uptc.management.computer.dto.*;
 
 public class ManagementPersistenceUser extends FilePlain{
+	
 	private List<UserDTO> listUserDTO = new ArrayList<>();
+	
+	public void dumpFilePlain(String rutaArchivo) {
+		List<String> records = new ArrayList<>();
+		 for(UserDTO objectDTO : listUserDTO){
+			 StringBuilder contentObject = new StringBuilder();
+			 contentObject.append(objectDTO.getNameUser()).append(CommonConstants.SEMI_COLON);
+			 contentObject.append(objectDTO.getPassword());
+			 
+			 records.add(contentObject.toString());
+		 }
+		 this.writer(rutaArchivo, records);
+	}
+	
 	public void loadFilePlain(String rutaNombreArchivo) {
 		List<String> contentInLine = this.reader(rutaNombreArchivo);
 		for(String row: contentInLine) {

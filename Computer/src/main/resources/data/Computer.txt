@@ -23,4 +23,3 @@ Com9;Lenovo;0002;wd 10;Ryzen;8Gb
 Com16;Acer;0003;wd 10;Ryzen;12Gb
 Com18;Dell;0004;wd 10;Intel;16Gb
 Com7;Dell;0002;wd 10;Ryzen;16Gb
-Com20;Asus;0007;wd 10;Intel;16Gb
