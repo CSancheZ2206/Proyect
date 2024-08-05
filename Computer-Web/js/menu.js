@@ -218,7 +218,7 @@ function loadUsers() {
                 cardBody.className = 'card-body';
 
                 const nameUser = document.createElement('p');
-                nameUser.className = 'card-text';
+                nameUser.className = 'card-title';
                 nameUser.textContent = `Usuario: ${user.nameUser}`;
 
                 const password = document.createElement('p');
