@@ -38,6 +38,12 @@ input[type="text"] {
     border-radius: 4px;
 }
 
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 button {
     background-color: #28a745;
     color: white;
@@ -49,6 +55,20 @@ button {
 
 button:hover {
     background-color: #218838;
+}
+
+.btn-back {
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
 }
 
 #message {

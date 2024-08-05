@@ -113,7 +113,7 @@ body {
 
 .btn-success {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 20px;
     color: white;
     background-color: green;
     text-decoration: none;
@@ -126,7 +126,7 @@ body {
 }
 
 .margin-button {
-    margin-left: 10px;
+    margin-left: 50px;
 }
 
 @media (max-width: 768px) {

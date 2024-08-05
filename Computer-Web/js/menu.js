@@ -170,8 +170,7 @@ function loadSellers() {
                 const btnUpdate = document.createElement('a');
                 btnUpdate.className = 'btn-success margin-button';
                 btnUpdate.textContent = 'Actualizar';
-                btnUpdate.href = '/updateseller.html';
-                btnUpdate.setAttribute('data-seller', JSON.stringify(seller));
+                btnUpdate.href = `./updateseller.html?nameUser=${seller.name}`;
 
                 cardBody.appendChild(name);
                 cardBody.appendChild(company);
