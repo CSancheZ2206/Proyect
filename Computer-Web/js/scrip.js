@@ -6,7 +6,7 @@ function validateUser(){
     .then(response => response.json())
     .then(response => {
         if(response){
-            window.location.href = "./dashboard.html";
+            window.location.href = "./menu.html";
         }else {
             alert("Usuario no se encuentra registrado");
         }
