@@ -49,5 +49,6 @@ public class ManagementUser {
 			e.printStackTrace();
 		}
 		return !Objects.isNull(usuarioEncontrado);
+		
 	}
 }

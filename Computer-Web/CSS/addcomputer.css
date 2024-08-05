@@ -1,0 +1,14 @@
+.add{
+    width: 30%;
+    margin: 5% auto;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+}
