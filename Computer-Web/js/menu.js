@@ -97,8 +97,8 @@ function loadComputers() {
                 const btnUpdate = document.createElement('a');
                 btnUpdate.className = 'btn-success margin-button';
                 btnUpdate.textContent = 'Actualizar';
-                btnUpdate.href = '/updatecomputer.html';
-                btnUpdate.setAttribute('data-computer', JSON.stringify(computer));
+                btnUpdate.href = `./updatecomputer.html?reference=${computer.reference}`;
+
 
                 cardBody.appendChild(title);
                 cardBody.appendChild(brand);

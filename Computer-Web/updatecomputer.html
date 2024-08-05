@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Computador</title>
+    <link rel="stylesheet" href="css/updatecomputer.css">
+</head>
+<body>
+    <header>
+        <h1>Actualizar Computador</h1>
+    </header>
+    <main>
+        <form id="updateForm">
+            <input type="hidden" id="reference" name="reference">
+            
+            <label for="brand">Marca:</label>
+            <input type="text" id="brand" name="brand">
+
+            <label for="model">Modelo:</label>
+            <input type="text" id="model" name="model">
+
+            <label for="opSystem">Sistema Operativo:</label>
+            <input type="text" id="opSystem" name="opSystem">
+
+            <label for="processor">Procesador:</label>
+            <input type="text" id="processor" name="processor">
+
+            <label for="ramMemory">Memoria RAM:</label>
+            <input type="text" id="ramMemory" name="ramMemory">
+
+            <button type="submit">Actualizar</button>
+        </form>
+        <div id="message"></div>
+    </main>
+    <script src="js/updatecomputer.js"></script>
+</body>
+</html>

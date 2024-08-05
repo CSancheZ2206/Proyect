@@ -1,4 +1,4 @@
-Com17;HP;0006;wd 11;Intel;6Gb
+Com17;HP;0003;wd 11;Ryzen;10Gb
 Com12;HP;0005;wd 11;Intel;12Gb
 Com19;Lenovo;0005;wd 11;Ryzen;8Gb
 Com15;Lenovo;0003;wd 11;Intel;8Gb
