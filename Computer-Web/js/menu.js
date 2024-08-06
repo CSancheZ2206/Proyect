@@ -148,6 +148,18 @@ function loadSellers() {
     addTitle.textContent = '¡Puedes agregar nuevos vendedores!';
     addCardBody.appendChild(addButton);
     addCardBody.appendChild(addTitle);
+
+    const searchButton = document.createElement('a');
+    searchButton.className = 'btn btn-primary';
+    searchButton.href = './searchSeller.html';
+    const searchImg = document.createElement('img');
+    searchImg.src = 'resource/icons/Index-Search.png';
+    searchButton.appendChild(searchImg);
+    const searchTitle = document.createElement('h3');
+    searchTitle.textContent = 'Buscar vendedor';
+    addCardBody.appendChild(searchButton);
+    addCardBody.appendChild(searchTitle);
+
     addCard.appendChild(addCardBody);
     content.appendChild(addCard);
 
@@ -217,6 +229,18 @@ function loadUsers() {
     addTitle.textContent = '¡Puedes agregar nuevos usuarios!';
     addCardBody.appendChild(addButton);
     addCardBody.appendChild(addTitle);
+
+    const searchButton = document.createElement('a');
+    searchButton.className = 'btn btn-primary';
+    searchButton.href = './searchUser.html';
+    const searchImg = document.createElement('img');
+    searchImg.src = 'resource/icons/Index-Search.png';
+    searchButton.appendChild(searchImg);
+    const searchTitle = document.createElement('h3');
+    searchTitle.textContent = 'Buscar usuario';
+    addCardBody.appendChild(searchButton);
+    addCardBody.appendChild(searchTitle);
+
     addCard.appendChild(addCardBody);
     content.appendChild(addCard);
 

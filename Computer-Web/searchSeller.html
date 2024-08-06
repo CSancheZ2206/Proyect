@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Vendedores</title>
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <header>
+        <h1>Buscar Vendedores</h1>
+    </header>
+    <main>
+        <form id="searchForm">
+            <label for="name">Nombre del Vendedor:</label>
+            <input type="text" id="name" name="name" required>
+            <div class="form-buttons">
+                <button type="submit">Buscar</button>
+                <a href="./menu.html" class="btn btn-secondary">Volver</a>
+            </div>
+        </form>
+        <div id="result"></div>
+    </main>
+    <script src="js/searchSeller.js"></script>
+</body>
+</html>
